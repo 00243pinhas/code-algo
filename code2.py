@@ -21,6 +21,7 @@ veloe=rentVelo("muller",5,20)
 veldocotidien=(veloa,velob,veloc,velod,veloe)
 
 
+
 veloP=rentVelo("coman",5,60)
 veloI=rentVelo("Lorey sane",5,60)
 veloN=rentVelo("Jamal musiala",5,60)
