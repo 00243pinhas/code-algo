@@ -30,7 +30,7 @@ class rentVelo:
                         liste.append(choix)
                         print(",".join(liste))
                     else:
-                        print(f"Entrez un nom d'un velo svp.....")
+ssage                        print(f"Veillez entrer le nom des velos qui sont afficher sur votre ecrean")
                         return
                 else:
                         return
