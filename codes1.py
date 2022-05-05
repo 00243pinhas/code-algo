@@ -15,7 +15,7 @@ class rentVelo:
         print(f"=>Velo_{self.nom} Disponible dans le stock ")
     
     @staticmethod
-    def commendes(q,nbr):
+    def commendes(q,nbr,nom):
         liste=[]
         count=0
         while q<=nbr:
@@ -26,8 +26,12 @@ class rentVelo:
 
             else:
                 if count<=q:
-                    liste.append(choix)
-                    print(",".join(liste))
+                    if choix==nom:
+                        liste.append(choix)
+                        print(",".join(liste))
+                    else:
+                        print(f"Entrez un nom d'un velo svp...")
+                        return
                 else:
                         return
         else:
@@ -39,12 +43,12 @@ class rentVelo:
         if q<=0:
             print(f"Entrer bien un nombre pour les velos ")
         if q>=3:
-            rentVelo.commendes(q,self.nbr)
+            rentVelo.commendes(q,self.nbr,self.nom)
             total=self.prix+int(rentVelo.indirim)+q
             print()
             print(f"{phrase} est de {total}$")
         else:
-            rentVelo.commendes(q,self.nbr)
+            rentVelo.commendes(q,self.nbr,self.nom)
             totale=self.prix*q
             print()
             print(f"{phras} est de {totale}$")
