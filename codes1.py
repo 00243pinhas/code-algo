@@ -30,12 +30,20 @@ class rentVelo:
                         liste.append(choix)
                         print(",".join(liste))
                     else:
-ssage                        print(f"Veillez entrer le nom des velos qui sont afficher sur votre ecrean")
+                        print(f"Veillez entrer le nom des velos qui sont afficher sur votre ecrean")
                         return
                 else:
                         return
         else:
             print(f"nous disposons que {nbr} de velos au stoque ")
+    
+    def name_controle(self,choice):
+        exact=None
+        for x in choice:
+            if x==self.nom:
+                return True
+            else:
+                print(f"erreur D'entrer Ecrivez tres bien le nom Svp...")
 
     def rentofbikes(self,q):
         phrase="Votre Facture total avec reduction "
